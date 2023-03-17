@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://media.aws.alkomprar.com/resources/assets/alkosto/wro/alkosto_home.css?v=2022-04-V5.0.3.6">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ux-alkosto/icons/style.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
+    <title>home data</title>
+</head>
+
+<body>
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .autopauta-principal {
+            padding: 0px 15px 24px 15px;
+        }
+
+        .autopauta-secundario {
+            padding: 16px 15px 16px 15px;
+        }
+
+        .bg-gray {
+            background-color: var(--whitesmoke);
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /*      #contenido {
+            opacity: 0;
+
+        } */
+
+
+        .grid a {
+            color: black;
+            font-weight: bold;
+        }
+
+        .grid>div {
+            height: 132px;
+            background-color: white;
+            flex: 1 1 132px;
+            border-radius: 4px;
+            margin: 12px 16px;
+            padding: 8px 10px;
+            -webkit-box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 15%);
+            -moz-box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 15%);
+            box-shadow: 0px 3px 6px 0px rgb(0 0 0 / 15%);
+        }
+
+        .fadeIn {
+            animation-name: fadeIn;
+            animation-duration: 2s;
+        }
+
+        .img-autopauta {
+            width: 100%;
+            height: 160px;
+        }
+
+
+        .img-cat {
+            width: 80px;
+            height: 80px;
+        }
+
+        .img-prod {
+            width: 100%;
+        }
+
+        k-title-underline {
+            padding-top: 16px;
+            margin-bottom: 2rem;
+        }
+
+        .name-cat {
+            margin: 16px 0px 0px 0px;
+        }
+
+        .p-0 {
+            padding: 0px;
+        }
+
+
+        .preload {
+            background-color: #f0f0f0;
+            border: 1px solid #fafafa;
+            border-radius: 8px;
+        }
+
+        .preload-autopauta {
+            height: 160px;
+        }
+
+        .preload-banner {
+            height: 350px;
+        }
+
+        .preload-categoria {
+            height: 132px;
+            background-color: #f0f0f0 !important;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-center {
+            text-align: center;
+            text-align: -webkit-center;
+            text-align-last: center;
+        }
+
+        @media (min-width:992px) {
+            .cont-banner {
+                padding-left: 0px;
+            }
+        }
+
+        @media (max-width:991px) {
+            .autopauta-principal {
+                padding: 16px 8px 16px 15px;
+            }
+
+            .cont-banner {
+                padding: 0;
+            }
+
+            .cont-products {
+                display: flex;
+                overflow-x: auto;
+            }
+
+            .d-xs-flex {
+                display: flex;
+                overflow-x: auto;
+            }
+
+            .grid {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+
+            .img-autopauta {
+                width: 300px;
+            }
+
+            .img-prod {
+                width: 230px;
+            }
+
+            .grid .preload-categoria {
+                padding: 8px 100px;
+            }
+
+            .preload-autopauta {
+                width: 300px;
+            }
+
+            .preload-banner {
+                height: 240px;
+            }
+        }
+    </style>
+  
+  <div class="cont-home">
+        <section class="container-fluid" id="contenido">
+            <div class="container">
+                <div class="contenedor-general">
+
+                    <div class="col-md-8 cont-banner preload-banner">
+                        <div class="preload"></div>
+                        <div class="splide" id="banner-principal">
+                            <div class="splide__track">
+                                <ul class="splide__list" id="cont-banner">
+                                    <div class="preload cont-banner"></div>
+                                </ul>
+                            </div>
+
+                            <div class="my-slider-progress">
+                                <div class="my-slider-progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-xs-flex" id="autopautas">
+                        <div class="col-xs-11 col-sm-6 col-md-4 autopauta-principal">
+                            <div class="preload preload-autopauta"></div>
+                        </div>
+                        <div class="col-xs-11 col-sm-6 col-md-4 autopauta-principal">
+                            <div class="preload preload-autopauta"></div>
+                        </div>
+                        <div class="col-xs-11 col-sm-6 col-md-4 autopauta-secundario">
+                            <div class="preload preload-autopauta"></div>
+                        </div>
+                        <div class="col-xs-11 col-sm-6 col-md-4 autopauta-secundario">
+                            <div class="preload preload-autopauta"></div>
+                        </div>
+                        <div class="col-xs-11 col-sm-6 col-md-4 autopauta-secundario">
+                            <div class="preload preload-autopauta"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray container-fluid">
+            <div class="container">
+                <k-title-underline type="center" loaded="">
+                    <h3>Categorias</h3>
+                </k-title-underline>
+
+                <div id="cont-categorias" class="row grid">
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                    <div class="categoria preload-categoria"></div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                <k-title-underline type="center" loaded="">
+                    <h3>Celulares</h3>
+                </k-title-underline>
+
+                <div class="row cont-products" id="cont-cel">
+
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                <k-title-underline type="center" loaded="">
+                    <h3>Computadores</h3>
+                </k-title-underline>
+
+                <div class="row cont-products" id="cont-pc">
+
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                <k-title-underline type="center" loaded="">
+                    <h3>Televisores</h3>
+                </k-title-underline>
+
+                <div class="row cont-products" id="cont-tv">
+
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                <k-title-underline type="center" loaded="">
+                    <h3>Electrdomésticos</h3>
+                </k-title-underline>
+
+                <div class="row cont-products" id="cont-electro">
+
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container">
+                <k-title-underline type="center" loaded="">
+                    <h3>Conoce más ofertas</h3>
+                </k-title-underline>
+
+                <div class="row cont-products" id="cont-mas-of">
+                </div>
+                <div class="col-md-12">
+                    <span id=zone935552712></span>
+                    <script>
+                        (function (r, d, u) {
+                            var s = d.createElement(r);
+                            s.async = true;
+                            u += '&cb=' + Date.now() + Math.random();
+                            s.src = u;
+                            var n = d.getElementsByTagName(r)[0];
+                            n.parentNode.insertBefore(s, n);
+                        })('script', document, '//engine.alkst.co/?935552712');
+                    </script>
+                </div>
+                <div class="row cont-products" id="cont-mas-of2">
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .my-slider-progress {
+                background: #ccc;
+            }
+
+            .my-slider-progress-bar {
+                background: var(--primary-color1);
+                height: 4px;
+                transition: width 2000ms ease;
+                width: 0;
+            }
+        </style>
+    </div>
+
+    <script src="./index-2023.js"></script>
+   <!--  <script src="https://cdn.jsdelivr.net/gh/UX-Alkosto/HomeStores/Alkosto/home-ak-js/pruebas/index-2023.js"></script>
+    -->  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+
+</body>
+
+</html>
