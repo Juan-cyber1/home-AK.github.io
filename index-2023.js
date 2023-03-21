@@ -113,8 +113,8 @@ const pintarAutopauta = (a) => {
     <div class="col-xs-11 col-sm-6 text-center fadeIn col-md-4 autopauta-principal">
     <a title="${a[0].autopauta_desc_img}" href="${a[0].autopauta_CTA}">    
         <picture>
-            <source type="image/webp" width="100" class="img img-responsive" srcset="${a[0].autopauta_desktop_webp}" />
-            <img loading="lazy" width="100" class="img-autopauta" src="${a[0].autopauta_desktop_jpg}" type="image/jpg" alt="${a[0].autopauta_desc_img}"/>
+            <source type="image/webp" srcset="${a[0].autopauta_desktop_webp}" />
+            <img type="image/jpg" loading="lazy" width="100" class="img-autopauta" src="${a[0].autopauta_desktop_jpg}" alt="${a[0].autopauta_desc_img}"/>
         </picture>
     </a>
         </div>`;
@@ -178,9 +178,9 @@ const pintarCategorias = (ca) => {
         `
     }).join("");
 
-    contenedorCategorias.innerHTML = mapCategorias + `<div class="ofertas"><a href="/ofertas">
+    contenedorCategorias.innerHTML = mapCategorias + `<div class="ofertas text-center "><a href="/ofertas" title="Ofertas Alkosto">
     <i class="ico-font alk-icon-offers"></i>
-    Ofertas
+    <p class="name-cat">Ofertas</p>
     </a></div>`;
 }
 

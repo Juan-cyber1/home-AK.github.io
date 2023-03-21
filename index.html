@@ -17,6 +17,7 @@
 
 <body>
 
+
     <style>
         @keyframes fadeIn {
             from {
@@ -34,6 +35,10 @@
 
         .autopauta-secundario {
             padding: 16px 15px 16px 15px;
+        }
+
+        .banner-auto {
+            padding: 24px 0px;
         }
 
         .bg-gray {
@@ -86,6 +91,12 @@
 
         .img-prod {
             width: 100%;
+            border-radius: 8px;
+            transition: 0.5s;
+        }
+
+        .img-prod:hover {
+            scale: 1.01;
         }
 
         k-title-underline {
@@ -93,8 +104,31 @@
             margin-bottom: 2rem;
         }
 
+        .my-slider-progress {
+            background: rgba(204, 204, 204, 0.5);
+            margin: 8px 0px;
+            border-radius: 16px;
+        }
+
+        .my-slider-progress-bar {
+            background: #004797;
+            height: 4px;
+            transition: width 2000ms ease;
+            border-radius: 16px;
+            width: 0;
+        }
+
         .name-cat {
             margin: 16px 0px 0px 0px;
+        }
+
+        .ofertas a {
+            text-decoration: none;
+            color: #EB5B25;
+        }
+
+        .ofertas i {
+            font-size: 80px;
         }
 
         .p-0 {
@@ -124,6 +158,11 @@
         .splide__slide img {
             width: 100%;
             height: auto;
+            padding: 0px 4px;
+        }
+
+        .splide__track--draggable {
+            border-radius: 8px;
         }
 
         .text-center {
@@ -164,6 +203,7 @@
 
             .img-autopauta {
                 width: 300px;
+                height: 128px;
             }
 
             .img-prod {
@@ -183,8 +223,8 @@
             }
         }
     </style>
-  
-  <div class="cont-home">
+
+    <div class="cont-home">
         <section class="container-fluid" id="contenido">
             <div class="container">
                 <div class="contenedor-general">
@@ -306,7 +346,7 @@
 
                 <div class="row cont-products" id="cont-mas-of">
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12" class="banner-auto">
                     <span id=zone935552712></span>
                     <script>
                         (function (r, d, u) {
@@ -323,24 +363,11 @@
                 </div>
             </div>
         </section>
-
-        <style>
-            .my-slider-progress {
-                background: #ccc;
-            }
-
-            .my-slider-progress-bar {
-                background: var(--primary-color1);
-                height: 4px;
-                transition: width 2000ms ease;
-                width: 0;
-            }
-        </style>
     </div>
 
     <script src="./index-2023.js"></script>
-   <!--  <script src="https://cdn.jsdelivr.net/gh/UX-Alkosto/HomeStores/Alkosto/home-ak-js/pruebas/index-2023.js"></script>
-    -->  
+    <!--  <script src="https://cdn.jsdelivr.net/gh/UX-Alkosto/HomeStores/Alkosto/home-ak-js/pruebas/index-2023.js"></script>
+    -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
